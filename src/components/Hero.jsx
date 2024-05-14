@@ -13,7 +13,7 @@ export default function Hero() {
         href="tel:+919389586440"
         className="bg-black text-[1.2rem] px-6 py-3 text-white rounded-3xl mt-8 transition ease-in-out delay-150 hover:scale-110 duration-300"
       >
-        Download App
+        Contact Us
       </a>
     </section>
   );

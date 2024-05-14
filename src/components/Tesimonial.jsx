@@ -4,26 +4,26 @@ const FEEDBACKS = [
   {
     rating: 4,
     feedback:
-      "I couldn't be happier with the service provided by Reliiv. I highly recommend them to anyone in need of reliable home services.",
-    user: { name: "James Smith", post: "Office Manager" },
+      "I recently used Wellminto's services for my laundry needs, and I must say I was impressed! The quality of the laundry was top-notch, and the staff was friendly and professional. Will definitely be using their services again!",
+    user: { name: "Neha Sharma", post: "Marketing Executive" },
+  },
+  {
+    rating: 3,
+    feedback:
+      "I have been using Wellminto for my dry cleaning for a few months now, and I am very satisfied with their service. They are reliable, and my clothes always come back looking fresh and clean. Highly recommended!",
+    user: { name: "Rajesh Patel", post: "IT Professional" },
   },
   {
     rating: 4,
     feedback:
-      "From their attention to detail to their prompt communication. I'll definitely be using their services again!",
-    user: { name: "James Smith", post: "Office Manager" },
-  },
-  {
-    rating: 4,
-    feedback:
-      "I was hesitant to try a new home service provider, but Reliiv came highly recommended. I'm so glad I gave them a chance!",
-    user: { name: "James Smith", post: "Office Manager" },
+      "I tried Wellminto's premium laundry service for some of my delicate garments, and I couldn't be happier with the results. The attention to detail and care taken with my clothes was exceptional.",
+    user: { name: "Priya Singh", post: "House Wife" },
   },
 ];
 
 export default function Testimonial() {
   return (
-    <div className="flex flex-col items-center mt-24 md:px-24 px-8">
+    <section id="testimonials" className="flex flex-col items-center mt-24 md:px-24 px-8">
       <h3 className="flex font-bold items-center text-[1rem] gap-2">
         <img src="\icons\star.png" alt="star" />
         TESTIMONIAL
@@ -35,7 +35,7 @@ export default function Testimonial() {
           return <TestimonialCard {...feedback} key={feedback.user}/>
         })}
       </div>
-    </div>
+    </section>
   );
 }
 

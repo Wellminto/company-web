@@ -6,14 +6,14 @@ export default function Footer() {
       <div className="flex flex-col md:px-24 px-8 py-12">
         <div className="grid md:grid-cols-6 w-full gap-4">
           <div className="flex justify-start flex-col gap-4 col-span-2">
-            <span className="flex items-center -ml-4">
-              <img src={"icons/logo.svg"} className="w-12 h-12" />
-              <h1 className="text-[2rem] font-bold leading-7 tracking-normal">
-                Reliiv.
+            <span className="flex items-center">
+              <img src={"icons/logo.png"} className="w-10 h-10" />
+              <h1 className="ml-2 text-[2rem] font-bold leading-7 tracking-normal">
+                Wellminto
               </h1>
             </span>
             <p className="text-[1rem] font-normal leading-[28px] my-2 cursor-pointer">
-              Your Convenience, Our Commitment, One Demand Service.
+              Your Convenience, Our Commitment, On Demand Service.
             </p>
             <span className="flex gap-2">
               <div className="flex justify-center items-center h-11 w-11 rounded-3xl bg-[#EAAD24]">
@@ -22,43 +22,64 @@ export default function Footer() {
               <div className="flex justify-center items-center h-11 w-11 rounded-3xl bg-[#EAAD24]">
                 <img src={"/icons/instagram.png"} />
               </div>
-              <div className="flex justify-center items-center h-11 w-11 rounded-3xl bg-[#EAAD24]">
-                <img src={"/icons/youtube.png"} />
-              </div>
             </span>
           </div>
           <div className="mt-4 md:mt-0 flex justify-start flex-col gap-4">
             <h4 className=" font-semibold text-[1.5rem] leading-[44px]">
               Navigation
             </h4>
-            <a className="text-[1rem] font-normal leading-[28px] cursor-pointer">
+            <a
+              href="#nav-bar"
+              className="text-[1rem] font-normal leading-[28px] cursor-pointer"
+            >
               Home
             </a>
-            <a className="text-[1rem] font-normal leading-[28px] cursor-pointer">
+            <a
+              href="#about-us"
+              className="text-[1rem] font-normal leading-[28px] cursor-pointer"
+            >
               About Us
             </a>
-            <a className="text-[1rem] font-normal leading-[28px] cursor-pointer">
-              Our Service
+            <a
+              href="#our-services"
+              className="text-[1rem] font-normal leading-[28px] cursor-pointer"
+            >
+              Services
             </a>
-            <a className="text-[1rem] font-normal leading-[28px] cursor-pointer">
-              Our Team
+            <a
+              href="#testimonials"
+              className="text-[1rem] font-normal leading-[28px] cursor-pointer"
+            >
+              Testimonials
             </a>
           </div>
           <div className="mt-4 md:mt-0 flex justify-start flex-col gap-4">
             <h4 className=" font-semibold text-[1.5rem] leading-[44px]">
               Services
             </h4>
-            <a className="text-[1rem] font-normal leading-[28px] cursor-pointer">
-            Home Cleaning
+            <a
+              href="#our-services"
+              className="text-[1rem] font-normal leading-[28px] cursor-pointer"
+            >
+              Laundry Service
             </a>
-            <a className="text-[1rem] font-normal leading-[28px] cursor-pointer">
-              Laundry
+            <a
+              href="#our-services"
+              className="text-[1rem] font-normal leading-[28px] cursor-pointer"
+            >
+              Steam Ironing
             </a>
-            <a className="text-[1rem] font-normal leading-[28px] cursor-pointer">
-              Gardening
+            <a
+              href="#our-services"
+              className="text-[1rem] font-normal leading-[28px] cursor-pointer"
+            >
+              Premium Laundry
             </a>
-            <a className="text-[1rem] font-normal leading-[28px] cursor-pointer">
-              AC Repair
+            <a
+              href="#our-services"
+              className="text-[1rem] font-normal leading-[28px] cursor-pointer"
+            >
+              Dry Cleaning
             </a>
           </div>
           <div className="mt-4 md:mt-0 flex justify-start flex-col gap-4 col-span-2">
@@ -80,14 +101,9 @@ export default function Footer() {
           </div>
         </div>
         <span className="border-b my-8"></span>
-        <div className="flex md:flex-row flex-col justify-between items-center">
+        <div className="flex md:flex-row flex-col justify-center items-center">
           <p className="text-[0.9rem] flex items-center gap-2 font-semibold leading-[18.2px]">
             COPYRIGHT © 2024 RELIIV
-          </p>
-          <p className="mt-4 md:mt-0 flex items-center gap-2 text-[0.9rem] font-semibold leading-[18.2px] cursor-pointer">
-            TERM OF USE{" "}
-            <span className="border-r border-[#EAAD24] h-[10px]"></span>
-            PRIVACY POLICY
           </p>
         </div>
       </div>

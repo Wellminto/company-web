@@ -16,8 +16,8 @@ export default function Card({ title, description, onClick, className,Icon }) {
         {description}
       </p>
       {onClick && (
-        <a className="cursor-pointer absolute bottom-2 text-[#EAAD24] font-button text-sm font-semibold leading-4 tracking-normal">
-          Learn More
+        <a href="tel:+919389586440" className="cursor-pointer absolute bottom-2 text-[#EAAD24] font-button text-sm font-semibold leading-4 tracking-normal">
+          Book Now
         </a>
       )}
     </div>

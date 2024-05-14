@@ -2,27 +2,33 @@ import Card from "./Card";
 
 const services = [
   {
-      title : 'Home Cleaning',
-      description : 'Expert Home Cleaning by One Demand Service. From top to bottom, we ensure a sparkling clean tailored to your needs. '
+    title: "Laundry Service",
+    description:
+      "Wellminto offers professional laundry services for all types of clothing, ensuring they are clean, fresh, and well-cared for.",
   },
   {
-      title : 'Laundry',
-      description : 'Freshness Delivered by One Demand Service. Say goodbye to laundry woes with our expert team at your service.  '
+    title: "Steam Ironing",
+    description:
+      "Customers can opt for steam ironing services to ensure their clothes are wrinkle-free and professionally pressed.",
   },
   {
-      title : 'Gardening',
-      description : 'Gardening Bliss, Brought to You by One Demand Service. Transform your outdoor oasis with our expert touch.  '
+    title: "Premium Laundry",
+    description:
+      "Wellminto provides premium laundry services, including delicate fabric care, stain removal, and specialized cleaning for high-end garments.",
   },
   {
-      title : 'AC Repairing',
-      description : 'AC Troubles? One Demand Service Has You Covered. Trust our experts to revive your cooling comfort.'
-  }
-
-]
+    title: "Dry Cleaning",
+    description:
+      "Wellminto offers dry cleaning services for garments that require special care, such as suits, dresses, and formal wear.",
+  },
+];
 
 export default function OurServices() {
   return (
-    <div className="mt-24 md:px-24 px-8 bg-white text-black flex flex-col gap-5">
+    <section
+      id="our-services"
+      className="mt-24 md:px-24 px-8 bg-white text-black flex flex-col gap-5"
+    >
       {/* top-section */}
       <div className="flex md:flex-row flex-col justify-between mb-4 md:items-center">
         <div className="flex flex-col gap-2">
@@ -41,7 +47,7 @@ export default function OurServices() {
           </p>
         </div>
         <button className="w-fit h-fit mt-4 md:mt-0 rounded-3xl bg-black text-white px-6 py-3">
-          All Services
+          Contact Now
         </button>
       </div>
       {/* bottom-card-section */}
@@ -52,12 +58,12 @@ export default function OurServices() {
               key={idx}
               title={service.title}
               description={service.description}
-              onClick={()=>{}}
-              Icon={<img src={"/icons/star.png"} alt="Star" />}           
-              />
+              onClick={() => {}}
+              Icon={<img src={"/icons/star.png"} alt="Star" />}
+            />
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }

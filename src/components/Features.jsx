@@ -20,20 +20,18 @@ const FEATURES = [
 
 export default function Features() {
   return (
-    <div className="mt-16 md:px-24 px-8">
-      <div className="flex md:flex-row flex-col justify-around">
-        {FEATURES.map((feature, idx) => {
-          return (
-            <Card
-              key={idx}
-              Icon={<img src="icons/star.png"/>}
-              className="w-[25%]"
-              title={feature.title}
-              description={feature.description}
-            />
-          );
-        })}
-      </div>
+    <div className="mt-24 md:px-24 px-8 flex md:flex-row flex-col justify-between">
+      {FEATURES.map((feature, idx) => {
+        return (
+          <Card
+            key={idx}
+            Icon={<img src="icons/star.png" />}
+            className="w-[25%]"
+            title={feature.title}
+            description={feature.description}
+          />
+        );
+      })}
     </div>
   );
 }

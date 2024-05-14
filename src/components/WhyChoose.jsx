@@ -19,7 +19,7 @@ const WHYLIST = [
 export default function WhyChoose() {
   return (
     <div className="flex items-center justify-between mt-24 md:px-24 px-8">
-      <div className="flex flex-col md:w-[40%]">
+      <div className="flex flex-col md:w-[40%] -ml-12">
         <img src="/illustrations/laundry-women.png" alt="icon" />
       </div>
       <div className="md:w-[60%]">
@@ -28,10 +28,10 @@ export default function WhyChoose() {
           <span className="text-[1rem] font-semibold">WHY CHOOSE US</span>
         </div>
         <h3 className="font-semibold text-[3rem]">
-          Providing Friendly, Reliable Home Services
+        Delivering Convenient and Trustworthy Laundry Solutions
         </h3>
         <h4 className="text-gray-500 text-[1rem] my-4">
-          Serving <span className="text-[#EAAD24]">1000+</span> customers every
+          *Serving <span className="text-[#EAAD24]">1000+</span> customers every
           month
         </h4>
 

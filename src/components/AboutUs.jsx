@@ -12,7 +12,7 @@ const data = [
 
 export default function AboutUs() {
   return (
-    <section className="mt-24 md:px-24 px-8">
+    <section id="about-us" className="mt-24 md:px-24 px-8">
       <div className="flex md:flex-row flex-col justify-between">
         <div className="md:w-[50%] flex gap-3.5 flex-col">
           <div className="flex gap-2 font-bold text-[1rem]">
@@ -53,9 +53,6 @@ export default function AboutUs() {
             </div>
           ))}
         </div>
-      </div>
-      <div className="mt-[96px] w-full h-[464px] bg-[#E5E5E5] rounded-xl">
-        <video src="" alt="#" className="" />
       </div>
     </section>
   );
