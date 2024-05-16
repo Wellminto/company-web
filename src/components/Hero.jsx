@@ -5,7 +5,7 @@ export default function Hero() {
         Revolutionize Your Wash with Wellminto
       </h1>
       <p className="w-[85%] text-[1rem] md:text-[1.5rem] text-center leading-[29px] mt-2">
-        Simplify Your Laundry with Wellminto's One Demand Laundry Services Your
+        Simplify Your Laundry with Wellminto One Demand Laundry Services Your
         One-Stop Solution for Laundry Needs Effortless Booking, Trusted
         Providers, Exceptional Results.
       </p>

@@ -39,7 +39,7 @@ export default function WhyChoose() {
 
         {WHYLIST.map(({ title, subtitle }) => {
           return (
-            <div className="flex flex-col gap-6">
+            <div key={title} className="flex flex-col gap-6">
               <div className="flex ">
                 <Image
                 width={10} height={10}
