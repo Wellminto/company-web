@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Card from "./Card";
 
 const FEATURES = [
@@ -25,7 +26,7 @@ export default function Features() {
         return (
           <Card
             key={idx}
-            Icon={<img src="icons/star.png" />}
+            Icon={<Image width={12} height={10} src="/icons/star.png" alt="star"/>}
             className="w-[25%]"
             title={feature.title}
             description={feature.description}

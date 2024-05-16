@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from 'next/image'
 import ProgressBar from "@ramonak/react-progress-bar";
 
 const data = [
@@ -16,7 +17,7 @@ export default function AboutUs() {
       <div className="flex md:flex-row flex-col justify-between">
         <div className="md:w-[50%] flex gap-3.5 flex-col">
           <div className="flex gap-2 font-bold text-[1rem]">
-            <img src="\icons\star.png" alt="star" />
+            <Image width={15} height={2} src="/icons/star.png" alt="star" />
             <span>ABOUT US</span>
           </div>
           <div className="font-semibold text-[3rem] leading-[64px]">

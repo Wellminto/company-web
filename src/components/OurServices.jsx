@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Card from "./Card";
 
 const services = [
@@ -33,7 +34,7 @@ export default function OurServices() {
       <div className="flex md:flex-row flex-col justify-between mb-4 md:items-center">
         <div className="flex flex-col gap-2">
           <span className="flex gap-2">
-            <img src={"/icons/star.png"} alt="Star" />
+            <Image width={10} height={10} src={"/icons/star.png"} alt="Star" />
             <h1 className="font-[1rem] text-base font-bold leading-5 tracking-wider">
               OUR SERVICES
             </h1>
@@ -59,7 +60,7 @@ export default function OurServices() {
               title={service.title}
               description={service.description}
               onClick={() => {}}
-              Icon={<img src={"/icons/star.png"} alt="Star" />}
+              Icon={<Image width={10} height={10} src={"/icons/star.png"} alt="Star" />}
             />
           );
         })}

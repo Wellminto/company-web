@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-6 w-full gap-4">
           <div className="flex justify-start flex-col gap-4 col-span-2">
             <span className="flex items-center">
-              <img src={"icons/logo.png"} className="w-10 h-10" />
+              <Image width={20} height={20} src={"/icons/logo.png"} className="w-10 h-10" alt="wellminto-logo"/>
               <h1 className="ml-2 text-[2rem] font-bold leading-7 tracking-normal">
                 Wellminto
               </h1>
@@ -17,10 +18,10 @@ export default function Footer() {
             </p>
             <span className="flex gap-2">
               <div className="flex justify-center items-center h-11 w-11 rounded-3xl bg-[#EAAD24]">
-                <img src={"/icons/twitter.png"} />
+                <Image width={30} height={30} src={"/icons/twitter.png"} alt="twitter-link"/>
               </div>
               <div className="flex justify-center items-center h-11 w-11 rounded-3xl bg-[#EAAD24]">
-                <img src={"/icons/instagram.png"} />
+                <Image width={30} height={30} src={"/icons/instagram.png"} alt="instagram-link"/>
               </div>
             </span>
           </div>
@@ -91,11 +92,11 @@ export default function Footer() {
               queries
             </p>
             <p className="flex items-center gap-2 text-[1rem] font-normal leading-[28px] cursor-pointer">
-              <img src={"/icons/map-pin.png"} className="w-[20px] h-[20px]" />{" "}
+              <Image width={10} height={10} src={"/icons/map-pin.png"} className="w-[20px] h-[20px]" alt="map-pin"/>{" "}
               1270, Railway Road, Roorkee, Uttarakhand
             </p>
             <p className="flex gap-2 items-center text-[1rem] font-normal leading-[28px] cursor-pointer">
-              <img src={"icons/phone.png"} className="w-[20px] h-[20px]" />{" "}
+              <Image width={10} height={10} src={"/icons/phone.png"} className="w-[20px] h-[20px]" alt="contact-number"/>{" "}
               +919389586440
             </p>
           </div>

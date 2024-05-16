@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const MeetOurTeamCard = ({ name, detail, link }) => {
@@ -22,7 +23,7 @@ const OurTeam = () => {
   return (
     <div className="flex flex-col gap-8 bg-[#F2F2F2] items-center mt-24 md:px-24 py-20 px-8">
       <h1 className="flex items-center gap-2 font-bold text-[1rem]">
-        <img src={"icons/star.png"} alt="star" />
+        <Image width={10} height={10} src={"icons/star.png"} alt="star" />
         OUR TEAM
       </h1>
       <h1 className="text-[3rem] font-semibold text-center">Meet Our Team</h1>

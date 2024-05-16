@@ -1,3 +1,4 @@
+import Image from "next/image";
 import StarRating from "./StarRating";
 
 const FEEDBACKS = [
@@ -25,7 +26,7 @@ export default function Testimonial() {
   return (
     <section id="testimonials" className="flex flex-col items-center mt-24 md:px-24 px-8">
       <h3 className="flex font-bold items-center text-[1rem] gap-2">
-        <img src="\icons\star.png" alt="star" />
+        <Image width={10} height={10} src="/icons/star.png" alt="star" />
         TESTIMONIAL
       </h3>
       <h4 className="font-semibold text-[3rem] text-center">Hear What Our Clients Say</h4>
@@ -45,8 +46,9 @@ function TestimonialCard({ rating, feedback, user }) {
       <StarRating size={18} disable maxRating={rating} />
       <p className="mt-6 text-gray-500 text-[1rem]">{feedback}</p>
       <div className="flex items-center gap-6 mt-6 border-t pt-6">
-        <img
-          src={"icons/user.png"}
+        <Image
+         width={40} height={40}
+          src={"/icons/user.png"}
           alt={"user"}
           className="w-[40px] h-[40px]"
         />

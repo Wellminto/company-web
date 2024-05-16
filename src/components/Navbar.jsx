@@ -1,10 +1,11 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Navbar() {
   return (
     <nav className="flex justify-between w-full bg-white py-7 md:px-24 px-8 items-center">
       <a className="flex gap-2 items-center" href=".">
-        <img src="/icons/logo.png" alt="Reliiv." className="h-12 w-12" />
+        <Image width={40} height={40} src="/icons/logo.png" alt="wellminto-logo" className="h-12 w-12" />
         <span className="text-2xl font-bold">Wellminto</span>
       </a>
       <ul className="flex gap-7 items-center text-gray-900 hidden md:flex">
